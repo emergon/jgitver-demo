@@ -7,6 +7,9 @@
   <version>1.0</version>
   <name>MyProject</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  	<myversion>${jgitver.calculated_version}</myversion>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,4 +18,25 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+  <plugins>
+  <plugin>
+	    <groupId>org.codehaus.mojo</groupId> 
+	    <artifactId>properties-maven-plugin</artifactId> 
+	    <version>1.0.0</version> 
+	    <executions> 
+	        <execution> 
+	            <phase>generate-resources</phase> 
+	            <goals> 
+	                <goal>write-project-properties</goal> 
+	            </goals> 
+	            <configuration> 
+	                <outputFile>properties-from-pom.properties</outputFile> 
+	            </configuration> 
+	        </execution> 
+	    </executions> 
+	</plugin>
+	</plugins>
+	</build>
 </project>
