@@ -2,40 +2,10 @@
 	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	    xsi:schemaLocation="http://jgitver.github.io/maven/configuration/1.1.0 https://jgitver.github.io/maven/configuration/jgitver-configuration-v1_1_0.xsd">
 
-    <!-- One of MAVEN, CONFIGURABLE, PATTERN -->
-    <strategy>MAVEN</strategy>
-
-    <!-- Deprecated (this field replaced and overridden by strategy), boolean -->
-    <mavenLike>true</mavenLike>
-
-    <!-- One of MAX, LATEST, NEAREST -->
-    <policy>MAX</policy>
-
-    <!-- Boolean -->
-    <autoIncrementPatch>true</autoIncrementPatch>
-
-    <!-- Boolean -->
-    <useCommitDistance>true</useCommitDistance>
-
-    <!-- Boolean -->
-    <useDirty>false</useDirty>
-
     <!-- Boolean -->
     <useGitCommitId>true</useGitCommitId>
 
     <!-- Integer between 8 and 40 inclusive -->
     <gitCommitIdLength>8</gitCommitIdLength>
-
-    <!-- String, comma separate multiple branches -->
-    <nonQualifierBranches>master</nonQualifierBranches>
-
-    <!-- An optional list of directories to not assign Jgitver's version for -->
-    <exclusions>
-        <!-- String, relative path from project root -->
-        <exclusion></exclusion>
-    </exclusions>
-
-    <!-- Boolean -->
-    <useDefaultBranchingPolicy>true</useDefaultBranchingPolicy>
 
 </configuration>
