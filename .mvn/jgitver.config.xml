@@ -21,13 +21,10 @@
     <useDirty>false</useDirty>
 
     <!-- Boolean -->
-    <useGitCommitId>false</useGitCommitId>
+    <useGitCommitId>true</useGitCommitId>
 
     <!-- Integer between 8 and 40 inclusive -->
     <gitCommitIdLength>8</gitCommitIdLength>
-
-    <!-- Integer -->
-    <maxSearchDepth>Integer.MAX_VALUE</maxSearchDepth>
 
     <!-- String, comma separate multiple branches -->
     <nonQualifierBranches>master</nonQualifierBranches>
