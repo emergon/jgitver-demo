@@ -7,7 +7,6 @@
     <autoIncrementPatch>true</autoIncrementPatch>
     <useCommitDistance>true</useCommitDistance>
     <useDirty>true</useDirty>
-    <useSnapshot>false</useSnapshot>
     <!-- Boolean -->
     <useGitCommitId>true</useGitCommitId>
 
