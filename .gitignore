@@ -1,1 +1,4 @@
 target/
+properties-from-pom.properties
+nb-configuration.xml
+faces-config.NavData
